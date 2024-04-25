@@ -1,7 +1,5 @@
-// Definición de variables
 const estudiantes = [];
 
-// Función para agregar un estudiante
 function agregarEstudiante() {
     const nombre = prompt("Ingrese el nombre del estudiante:");
     const edad = parseInt(prompt("Ingrese la edad del estudiante:"));
@@ -17,7 +15,6 @@ function agregarEstudiante() {
     alert(`Estudiante "${nombre}" agregado.`);
 }
 
-// Función para buscar un estudiante por nombre
 function buscarEstudiantePorNombre(nombre) {
     const estudianteEncontrado = estudiantes.find(estudiante => estudiante.nombre === nombre);
     if (estudianteEncontrado) {
@@ -31,7 +28,7 @@ function buscarEstudiantePorNombre(nombre) {
     }
 }
 
-// Función para filtrar estudiantes por edad
+
 function filtrarEstudiantesPorEdad(edadMinima) {
     const estudiantesFiltrados = estudiantes.filter(estudiante => estudiante.edad >= edadMinima);
     if (estudiantesFiltrados.length > 0) {
@@ -47,7 +44,7 @@ function filtrarEstudiantesPorEdad(edadMinima) {
     }
 }
 
-// Ejecución del programa
+
 while (true) {
     const opcion = prompt("Seleccione una opción:\n" +
         "1. Agregar estudiante\n" +
